@@ -1,0 +1,16 @@
+server:
+  port: 41597
+spring:
+  datasource:
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+    url: jdbc:postgresql://localhost:5432/anon_bot
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+
+telegram:
+  bot:
+    token: ${TELEGRAM_BOT_TOKEN}
+
